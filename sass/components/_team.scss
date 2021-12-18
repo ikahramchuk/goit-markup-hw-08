@@ -1,0 +1,131 @@
+.accent-team {
+  @media screen and (min-width: 768px) {
+    padding-bottom: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 94px;
+  }
+
+  background-color: #f5f4fa;
+}
+.our-team {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  // margin-top: -30px;
+  // margin-left: -30px;
+}
+.our-team__team {
+  margin-top: 30px;
+  &:first-child {
+    margin-top: 0;
+  }
+  &:nth-child(even) {
+    @media screen and (min-width: 768px) {
+      margin-left: 30px;
+    }
+  }
+  &:nth-child(-n + 2) {
+    @media screen and (min-width: 768px) {
+      margin-top: 0;
+    }
+  }
+  height: 622px;
+  // margin: 30px 0 0 30px;
+  background-color: #ffffff;
+
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.our-team__team:nth-child(4n) {
+  margin-right: 0;
+}
+.our-team__member {
+  padding: 30px 0 24px;
+  // padding: 30px 0;
+}
+.our-team__name {
+  color: var(--primary-text-color);
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+
+.our-team__position {
+  margin-top: 10px;
+
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+.our-team__social {
+  position: relative;
+  // display: flex;
+  // align-items: center;
+
+  text-decoration: none;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.section__title {
+  color: var(--primary-text-color);
+  padding-top: 60px;
+  padding-bottom: 30px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  @media screen and (max-width: 1199px) {
+    // flex-basis: calc(100% / 2);
+    font-size: 28px;
+  }
+  // margin-bottom: 50px;
+  text-align: center;
+}
+.comand-link {
+  display: flex;
+  margin-top: 16px;
+  justify-content: center;
+}
+
+.item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.icon-svg {
+  display: flex;
+
+  width: 44px;
+  height: 44px;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    outline: none;
+    &:hover .social__icon,
+    &:focus .social__icon {
+      fill: var(--background-color);
+    }
+  }
+}
+
+.social__link {
+  fill: #afb1b8;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social__icon {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
