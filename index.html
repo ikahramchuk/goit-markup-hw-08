@@ -12,39 +12,65 @@
         <link rel="stylesheet" href="./css/main.css" />
     </head>
     <body>
-        <!-- <header class="page-header">
+        <header class="page-header">
             <div class="container page-header__main">
                 <a href="/" class="logo"><span class="page-header__logo">Web</span>Studio</a>
-                <button type="button" class="menu-button is-open" aria-expanded="false" aria-controls="menu-container" data-menu-button>
-                    <svg class="" width="40" height="40" aria-label="переключатель мобильного">
-                        <use class="icon-close" href="./images/icons.svg#icon-close"></use>
+                <button type="button" class="menu__button-burger js-open-menu" aria-label="Переключатель мобильного меню"
+					aria-controls="menu"
+					aria-expanded="false">
+                    <svg class="" width="40" height="40">
                         <use class="icon-menu" href="./images/icons.svg#icon-menu"></use>
                     </svg>
                 </button>
-                <div class="menu-container" id="menu-container" data-menu>контент меню</div>
-                <nav class="page-header__nav">
-                    <ul class="page-header__item">
-                        <li class="page-header__element"><a href="./" class="page-header__text page-header__text--invers page-header__text--current">Студия</a></li>
-                        <li class="page-header__element"><a href="./portfolio.html" class="page-header__text page-header__text--invers">Портфолио</a></li>
-                        <li class="page-header__element"><a href="" class="page-header__text page-header__text--invers">Контакты</a></li>
-                    </ul>
-                </nav>  
-                <ul class="page-header__link">
-                    <li class="page-header__element"><a href="mailto:info@devstudio.com" class="page-header__text page-header__text--invers">
-                        <svg class="page-header__icon page-header__icon--envelope" width="16" height="12">
-                            <use href="./images/icons.svg#icon-envelope">
-                            </use>
-                        </svg>info@devstudio.com</a>
-                    </li>
-                    <li class="page-header__element"><a href="tel:++380961111111" class="page-header__text page-header__text--invers">
-                        <svg class="page-header__icon page-header__icon--smartphone" width="10" height="16">
-                            <use href="./images/icons.svg#icon-smartphone">
-                            </use>
-                        </svg>+38 096 111 11 11</a>
-                    </li>
-                </ul>
+                <div class="menu js-menu-container" id="menu">
+					<button type="button" class="menu__button-close js-close-menu" aria-label="Закрытие мобильного меню">
+						<svg width="40" height="40">
+							<use class="menu__icon-close" href="./images/icons.svg#icon-close"></use>
+						</svg>
+				    </button>
+                    
+                    <nav class="page-header__nav">
+                        <ul class="page-header__item">
+                            <li class="page-header__element"><a href="./" class="page-header__text page-header__text--invers page-header__text--current">Студия</a></li>
+                            <li class="page-header__element"><a href="./portfolio.html" class="page-header__text page-header__text--invers">Портфолио</a></li>
+                            <li class="page-header__element"><a href="" class="page-header__text page-header__text--invers">Контакты</a></li>
+                        </ul>
+                    </nav>  
+                    <div>
+                        <ul class="page-header__link">
+                            <li class="page-header__element page-contact-element"><a href="mailto:info@devstudio.com"
+                                    class="page-header__text page-header__text--invers page-contact__link">
+                                    <svg class="page-header__icon page-header__icon--envelope" width="16" height="12">
+                                        <use href="./images/icons.svg#icon-envelope">
+                                        </use>
+                                    </svg>info@devstudio.com</a>
+                            </li>
+                            <li class="page-header__element page-contact-element"><a href="tel:+380961111111"
+                                    class="page-header__text page-header__text--invers page-contact__link page-contact__link--tel">
+                                    <svg class="page-header__icon page-header__icon--smartphone" width="10" height="16">
+                                        <use href="./images/icons.svg#icon-smartphone">
+                                        </use>
+                                    </svg>+38 096 111 11 11</a>
+                            </li>
+                        </ul>
+                        <ul class="header-social">
+                            <li class="header-social__item">
+                                <a class="header-social__link" href="">Instagram</a>
+                            </li>
+                            <li class="header-social__item">
+                                <a class="header-social__link" href="">Twitter</a>
+                            </li>
+                            <li class="header-social__item">
+                                <a class="header-social__link" href="">Facebook</a>
+                            </li>
+                            <li class="header-social__item">
+                                <a class="header-social__link" href="">LinkedIn</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>    
             </div>
-        </header> -->
+        </header>
                 
         <main>
             <section class="section-business">
@@ -127,7 +153,7 @@
                     <h2 class="section__title">Наша команда</h2>
                     <ul class="our-team">
                         <li class="our-team__team">
-                            <img src="./images/img1.jpg" alt="фото Игоря" width="270" height="260">
+                            <img srcset="" src="./images/img1.jpg" alt="фото Игоря" width="270" height="260">
                             <div class="our-team__member">
                                 <h3 class="our-team__name">Игорь Демьяненко</h3>
                                 <p class="our-team__position">Product Designer</p>
@@ -463,6 +489,10 @@
         
         </div>
         <script src="./js/modal.js"></script>
+        <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+            integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+            crossorigin="anonymous"></script>
+        <script defer src="js/mobile-menu.js"></script>
         
     </body>
     

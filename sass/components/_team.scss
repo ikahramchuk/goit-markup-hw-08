@@ -21,17 +21,24 @@
   &:first-child {
     margin-top: 0;
   }
-  &:nth-child(even) {
-    @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) {
+    &:nth-child(even) {
       margin-left: 30px;
     }
-  }
-  &:nth-child(-n + 2) {
-    @media screen and (min-width: 768px) {
+    &:nth-child(-n + 2) {
       margin-top: 0;
     }
   }
-  height: 622px;
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 30px;
+    margin-top: 0;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+
   // margin: 30px 0 0 30px;
   background-color: #ffffff;
 
