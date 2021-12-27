@@ -16,7 +16,7 @@
 </head>
 
 <body>
-    <header class="page-header">
+    <!-- <header class="page-header">
         <div class="container page-header__main">
             <nav class="page-header__nav">
                 <a href="/" class="logo"><span class="page-header__logo">Web</span>Studio</a>
@@ -46,7 +46,7 @@
                 </li>
             </ul>
         </div>
-    </header>
+    </header> -->
     
     <main>
         <section class="section-filther">
@@ -78,7 +78,17 @@
                         
                         <a href="/" class="filther-element card-set__filther card-set--posicion">
                             <div class="flex-element-wrap">
-                                <img src="./images/img5.jpg" alt="открытый ноутбук с фото сотрудников" width="370" height="294">
+                                <picture>
+                                    <source srcset="./images/works/works-1-desktop.jpg   1x, 
+                                    ./images//works/works-1-desktop@2x.jpg 2x" 
+                                        media="(min-width: 1200px)" />
+                                    <source srcset="./images/works/works-1-tablet.jpg 1x, 
+                                    ./images/works/works-1-tablet@2x.jpg 2x"
+                                        media="(min-width: 768px)" />
+                                    <source srcset="./images/works/works-1.jpg 1x, ./images/works/works-1@2x.jpg 2x"
+                                        media="(min-width: 320px)" />
+                                    <img class="card-set__img" src="./images/img5.jpg" alt="открытый ноутбук с фото сотрудников" width="370" height="294">
+                                </picture>
                                 <p class="flex-element-text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
                                 шпионажа и атак на защищённые сервера конкурентов.</p>
                             </div>
@@ -93,7 +103,17 @@
                     <li class="card-set__element">
                         <a href="/" class="filther-element card-set__filther card-set--posicion">
                             <div class="flex-element-wrap">
-                                <img src="./images/img6.jpg" alt="два баскетболиста с мячем" width="370" height="294">
+                                <picture>
+                                    <source srcset="./images/works/works-2-desktop.jpg   1x, 
+                                                     ./images//works/works-2-desktop@2x.jpg 2x" media="(min-width: 1200px)" />
+                                    <source srcset="./images/works/works-2-tablet.jpg 1x, 
+                                                     ./images/works/works-2-tablet@2x.jpg 2x" media="(min-width: 768px)" />
+                                    <source srcset="./images/works/works-2.jpg 1x, 
+                                                    ./images/works/works-2@2x.jpg 2x" 
+                                        media="(min-width: 320px)" />
+                                    <img class="card-set__img" src="./images/img6.jpg" alt="два баскетболиста с мячем" width="370" height="294">
+                                </picture>
+                                
                                 <p class="flex-element-text">Технокряк это современная площадка распространения коронавируса. Компании используют эту
                                 платформу для цифрового
                                 шпионажа и атак на защищённые сервера конкурентов.</p>
@@ -107,7 +127,18 @@
                     <li class="card-set__element">
                         <a href="/" class="filther-element card-set__filther card-set--posicion">
                             <div class="flex-element-wrap">
-                                <img src="./images/img7.jpg" alt="логотип ресторана в виде рыбы с надписью сифуд" width="370" height="294">
+                                <picture>
+                                    <source srcset="./images/works/works-3-desktop.jpg 1x, 
+                                                    ./images//works/works-3-desktop@2x.jpg 2x"
+                                        media="(min-width: 1200px)" />
+                                    <source srcset="./images/works/works-3-tablet.jpg 1x, 
+                                                    ./images/works/works-3-tablet@2x.jpg 2x"
+                                        media="(min-width: 768px)" />
+                                    <source srcset="./images/works/works-3.jpg 1x, 
+                                                    ./images/works/works-3@2x.jpg 2x" media="(min-width: 320px)" />
+                                    <img class="card-set__img" src="./images/img7.jpg" alt="логотип ресторана в виде рыбы с надписью сифуд" width="370" height="294">
+                                </picture>
+                                
                                 <p class="flex-element-text">Технокряк это современная площадка распространения коронавируса. Компании используют эту
                                 платформу для цифрового
                                 шпионажа и атак на защищённые сервера конкурентов.</p>
@@ -121,7 +152,18 @@
                     <li class="card-set__element">
                         <a href="/" class="filther-element card-set__filther card-set--posicion">
                             <div class="flex-element-wrap">
-                                <img src="./images/img8.jpg" alt="наушники, которые одеваются на голову" width="370" height="294">
+                                <picture>
+                                    <source srcset="./images/works/works-4-desktop.jpg 1x, 
+                                                    ./images//works/works-4-desktop@2x.jpg 2x"
+                                        media="(min-width: 1200px)" />
+                                    <source srcset="./images/works/works-4-tablet.jpg 1x, 
+                                                    ./images/works/works-4-tablet@2x.jpg 2x"
+                                        media="(min-width: 768px)" />
+                                    <source srcset="./images/works/works-4.jpg 1x, 
+                                                    ./images/works/works-4@2x.jpg 2x" media="(min-width: 320px)" />
+                                    <img class="card-set__img" src="./images/img8.jpg" alt="наушники, которые одеваются на голову" width="370" height="294">
+                                </picture>
+                                
                                 <p class="flex-element-text">Технокряк это современная площадка распространения коронавируса. Компании используют эту
                                 платформу для цифрового
                                 шпионажа и атак на защищённые сервера конкурентов.</p>
@@ -135,7 +177,18 @@
                     <li class="card-set__element">
                         <a href="/" class="filther-element card-set__filther card-set--posicion">
                             <div class="flex-element-wrap">
-                                <img src="./images/img9.jpg" alt="две коробочки разныех цветов и размеров" width="370" height="294">
+                                <picture>
+                                    <source srcset="./images/works/works-5-desktop.jpg 1x, 
+                                                    ./images//works/works-5-desktop@2x.jpg 2x"
+                                        media="(min-width: 1200px)" />
+                                    <source srcset="./images/works/works-5-tablet.jpg 1x, 
+                                                    ./images/works/works-5-tablet@2x.jpg 2x"
+                                        media="(min-width: 768px)" />
+                                    <source srcset="./images/works/works-5.jpg 1x, 
+                                                    ./images/works/works-5@2x.jpg 2x" media="(min-width: 320px)" />
+                                    <img class="card-set__img" src="./images/img9.jpg" alt="две коробочки разныех цветов и размеров" width="370" height="294">
+                                </picture>
+                                
                                 <p class="flex-element-text">Технокряк это современная площадка распространения коронавируса. Компании используют эту
                                 платформу для цифрового
                                 шпионажа и атак на защищённые сервера конкурентов.</p>
@@ -149,7 +202,18 @@
                     <li class="card-set__element">
                         <a href="/" class="filther-element card-set__filther card-set--posicion">
                             <div class="flex-element-wrap">
-                                <img src="./images/img10.jpg" alt="фото Игоря" width="370" height="294">
+                                <picture>
+                                    <source srcset="./images/works/works-6-desktop.jpg 1x, 
+                                                    ./images//works/works-6-desktop@2x.jpg 2x"
+                                        media="(min-width: 1200px)" />
+                                    <source srcset="./images/works/works-6-tablet.jpg 1x, 
+                                                    ./images/works/works-6-tablet@2x.jpg 2x"
+                                        media="(min-width: 768px)" />
+                                    <source srcset="./images/works/works-6.jpg 1x, 
+                                                    ./images/works/works-6@2x.jpg 2x" media="(min-width: 320px)" />
+                                    <img class="card-set__img" src="./images/img10.jpg" alt="фото Игоря" width="370" height="294">
+                                </picture>
+                                
                                 <p class="flex-element-text">Технокряк это современная площадка распространения коронавируса. Компании используют эту
                                 платформу для цифрового
                                 шпионажа и атак на защищённые сервера конкурентов.</p>
@@ -163,7 +227,18 @@
                     <li class="card-set__element">
                         <a href="/" class="filther-element card-set__filther card-set--posicion">
                             <div class="flex-element-wrap">
-                                <img src="./images/img11.jpg" alt="фото Игоря" width="370" height="294">
+                                <picture>
+                                    <source srcset="./images/works/works-7-desktop.jpg 1x, 
+                                                    ./images//works/works-7-desktop@2x.jpg 2x"
+                                        media="(min-width: 1200px)" />
+                                    <source srcset="./images/works/works-7-tablet.jpg 1x, 
+                                                    ./images/works/works-7-tablet@2x.jpg 2x"
+                                        media="(min-width: 768px)" />
+                                    <source srcset="./images/works/works-7.jpg 1x, 
+                                                    ./images/works/works-7@2x.jpg 2x" media="(min-width: 320px)" />
+                                    <img class="card-set__img" src="./images/img11.jpg" alt="фото Игоря" width="370" height="294">
+                                </picture>
+                                
                                 <p class="flex-element-text">Технокряк это современная площадка распространения коронавируса. Компании используют эту
                                 платформу для цифрового
                                 шпионажа и атак на защищённые сервера конкурентов.</p>
@@ -177,7 +252,18 @@
                     <li class="card-set__element">
                         <a href="/" class="filther-element card-set__filther card-set--posicion">
                             <div class="flex-element-wrap">
-                                <img src="./images/img12.jpg" alt="фото Игоря" width="370" height="294">
+                                <picture>
+                                    <source srcset="./images/works/works-8-desktop.jpg 1x, 
+                                                    ./images//works/works-8-desktop@2x.jpg 2x"
+                                        media="(min-width: 1200px)" />
+                                    <source srcset="./images/works/works-8-tablet.jpg 1x, 
+                                                    ./images/works/works-8-tablet@2x.jpg 2x"
+                                        media="(min-width: 768px)" />
+                                    <source srcset="./images/works/works-8.jpg 1x, 
+                                                    ./images/works/works-8@2x.jpg 2x" media="(min-width: 320px)" />
+                                    <img class="card-set__img" src="./images/img12.jpg" alt="фото Игоря" width="370" height="294">
+                                </picture>
+                                
                                 <p class="flex-element-text">Технокряк это современная площадка распространения коронавируса. Компании используют эту
                                 платформу для цифрового
                                 шпионажа и атак на защищённые сервера конкурентов.</p>
@@ -191,7 +277,18 @@
                     <li class="card-set__element">
                         <a href="/" class="filther-element card-set__filther card-set--posicion">
                             <div class="flex-element-wrap">
-                                <img src="./images/img13.jpg" alt="фото Игоря" width="370" height="294">
+                                <picture>
+                                    <source srcset="./images/works/works-9-desktop.jpg 1x, 
+                                                    ./images//works/works-9-desktop@2x.jpg 2x"
+                                        media="(min-width: 1200px)" />
+                                    <source srcset="./images/works/works-9-tablet.jpg 1x, 
+                                                    ./images/works/works-9-tablet@2x.jpg 2x"
+                                        media="(min-width: 768px)" />
+                                    <source srcset="./images/works/works-9.jpg 1x, 
+                                                    ./images/works/works-9@2x.jpg 2x" media="(min-width: 320px)" />
+                                    <img class="card-set__img" src="./images/img13.jpg" alt="фото Игоря" width="370" height="294">
+                                </picture>
+                                
                                 <p class="flex-element-text">Технокряк это современная площадка распространения коронавируса. Компании используют эту
                                 платформу для цифрового
                                 шпионажа и атак на защищённые сервера конкурентов.</p>
@@ -207,7 +304,7 @@
             
         </section>
         <footer class="page-footer">
-            <div class="container box">
+            <div class="container page-footer__container box">
                 <div class="page-footer__social">
                     <a href="/" class="page-footer__logo"><span class="page-header__logo">Web</span>Studio</a>
                     <address class="page-footer__contact">
@@ -253,7 +350,7 @@
                         </li>
                     </ul>
                 </div>
-            
+        
                 <div class="box-online box-online--margin-left">
                     <p class="box-footer__text box-footer__margin-bottom">Подпишитесь на рассылку</p>
                     <form action="#" class="box-online__form">

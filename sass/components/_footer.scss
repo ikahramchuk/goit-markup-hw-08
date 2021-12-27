@@ -63,16 +63,6 @@
     color: var(--accent-color);
   }
 }
-// .page-footer__logo {
-//   text-decoration: none;
-
-//   //   color: #ffffff;
-
-//   font-family: Raleway, cursive;
-//   font-weight: 700;
-//   font-size: 26px;
-//   line-height: 1.19;
-// }
 
 .page-footer__link {
   font-size: 14px;
@@ -107,15 +97,9 @@
   margin-right: 93px;
 }
 
-/*.footer-social:not(:last-child) {
-
-  margin-right: 70px;
-}*/
-
 .box-footer {
-  margin-bottom: 60px;
-  @media screen and (min-width: 1200px) {
-    margin-bottom: 0;
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 60px;
   }
   &__text {
     font-weight: 700;
@@ -162,6 +146,7 @@
 }
 
 .box-online__input {
+  // width: 100%;
   width: 358px;
   height: 50px;
   background-color: transparent;

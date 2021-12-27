@@ -670,17 +670,9 @@
   margin-right: 93px;
 }
 
-/*.footer-social:not(:last-child) {
-
-  margin-right: 70px;
-}*/
-.box-footer {
-  margin-bottom: 60px;
-}
-
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 1199px) {
   .box-footer {
-    margin-bottom: 0;
+    margin-bottom: 60px;
   }
 }
 
@@ -868,71 +860,69 @@
 
 .section-filther__item {
   display: flex;
-  justify-content: center;
-  margin-bottom: 34px;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-left: -8px;
+  margin-top: -15px;
+  margin-bottom: 40px;
 }
 
-.section-filther__button:not(:last-child) {
-  margin-right: 6px;
+@media screen and (min-width: 768px) {
+  .section-filther__item {
+    justify-content: center;
+    margin-bottom: 34px;
+  }
 }
 
-.section-filther__button:not(:last-child):hover, .section-filther__button:not(:last-child):focus {
+.section-filther__button {
+  margin-left: 8px;
+  margin-top: 15px;
+}
+
+.section-filther__button:hover, .section-filther__button:focus {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
   outline: none;
 }
 
-.card-set {
-  display: flex;
-  flex-wrap: wrap;
+.card-set__img {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .card-set {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
 }
 
 .card-set__element {
-  outline: none;
-  margin-right: 30px;
-  margin-bottom: 30px;
   cursor: pointer;
-  transition: transform 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 768px) {
+  .card-set__element {
+    margin: 15px;
+    display: flex;
+    box-sizing: border-box;
+    flex-basis: calc(100% / 2 - 30px);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .card-set__element {
+    flex-basis: calc(100% / 3 - 30px);
+  }
 }
 
 .card-set__element:hover .flex-element-text {
   transform: translate(0);
 }
 
-.card-set__element:nth-child(n + 7) {
-  margin-bottom: 0;
-}
-
-.flex-element-wrap {
-  position: relative;
-  overflow: hidden;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.card-set__filther {
-  display: block;
-  text-decoration: none;
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.card-set__filther:hover, .card-set__filther:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-  outline: none;
-}
-
-.flex-element-text {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: rgba(33, 150, 243, 0.9);
-  padding: 63px 24px;
-  color: #ffffff;
-  font-size: 18px;
-  line-height: 1.56;
-  letter-spacing: 0.03em;
-  height: 100%;
-  transform: translateY(101%);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.card-set__element:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 .card-set__text {
@@ -954,6 +944,45 @@
   font-size: 16px;
   line-height: 1.88;
   color: var(--primary-text-color);
+}
+
+.card-set__filther {
+  display: block;
+  text-decoration: none;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-set__filther:hover, .card-set__filther:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  outline: none;
+}
+
+.flex-element-wrap {
+  position: relative;
+  overflow: hidden;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.flex-element-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(33, 150, 243, 0.9);
+  padding: 63px 24px;
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  width: 100%;
+  height: 100%;
+  transform: translateY(101%);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.flex-element-text .card-set__filther:hover,
+.flex-element-text .card-set__filther:focus {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .section-title {
