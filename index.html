@@ -41,54 +41,58 @@
                                                 </svg>+38 096 111 11 11</a>
                                         </li>
                                     </ul>
-                <button type="button" class="menu__button-burger js-open-menu" aria-label="Переключатель мобильного меню"
-					aria-controls="menu"
-					aria-expanded="false">
+                <button type="button" class="menu__button-burger">
                     <svg class="" width="40" height="40">
                         <use class="icon-menu" href="./images/icons.svg#icon-menu"></use>
                     </svg>
                 </button>
-                <div class="menu js-menu-container" id="menu">
-					<button type="button" class="menu__button-close js-close-menu" aria-label="Закрытие мобильного меню">
-						<svg width="40" height="40">
-							<use class="menu__icon-close" href="./images/icons.svg#icon-close"></use>
-						</svg>
-				    </button>
-                    
-                    <nav class="menu-nav">
-                        <ul class="menu-nav__item">
-                            <li class="menu-nav__element"><a href="./" class="menu-nav__text menu-nav__text--invers menu-nav__text--current">Студия</a></li>
-                            <li class="menu-nav__element"><a href="./portfolio.html" class="menu-nav__text menu-nav__text--invers">Портфолио</a></li>
-                            <li class="menu-nav__element"><a href="" class="menu-nav__text menu-nav__text--invers">Контакты</a></li>
-                        </ul>
-                    </nav>  
-                    <div>
-                        <ul class="menu-contact">
-                            <li class="menu-contact__item"><a href="tel:+380961111111" class="menu-contact__link menu-contact__link--invers">
-                                    +38 096 111 11 11</a>
-                            </li>
-                            <li class="menu-contact__item"><a href="mailto:info@devstudio.com"
-                                    class="menu-contact__link menu-contact__link--invers ">
-                                    info@devstudio.com</a>
-                            </li>
-                            
-                        </ul>
-                        <ul class="header-social">
-                            <li class="header-social__item">
-                                <a class="header-social__link" href="">Instagram</a>
-                            </li>
-                            <li class="header-social__item">
-                                <a class="header-social__link" href="">Twitter</a>
-                            </li>
-                            <li class="header-social__item">
-                                <a class="header-social__link" href="">Facebook</a>
-                            </li>
-                            <li class="header-social__item">
-                                <a class="header-social__link" href="">LinkedIn</a>
-                            </li>
-                        </ul>
+                <div class="menu">
+                    <div class="container-menu">
+                        <div class="menu-nav">
+                        <button type="button" class="menu__button-close">
+                            <svg width="40" height="40">
+                                <use class="menu__icon-close" href="./images/icons.svg#icon-close"></use>
+                            </svg>
+                        </button>
+                                
+                       
+                            <ul class="menu-nav__item">
+                                <li class="menu-nav__element"><a href="./index.html"
+                                        class="menu-nav__text menu-nav__text--invers menu-nav__text--current">Студия</a></li>
+                                <li class="menu-nav__element"><a href="./portfolio.html"
+                                        class="menu-nav__text menu-nav__text--invers">Портфолио</a></li>
+                                <li class="menu-nav__element"><a href="" class="menu-nav__text menu-nav__text--invers">Контакты</a></li>
+                            </ul>
+                        </div>
+                        <div class="connection">
+                            <ul class="menu-contact">
+                                <li class="menu-contact__item"><a href="tel:+380961111111"
+                                        class="menu-contact__tel menu-contact__tel--invers">
+                                        +38 096 111 11 11</a>
+                                </li>
+                                <li class="menu-contact__item"><a href="mailto:info@devstudio.com"
+                                        class="menu-contact__mail menu-contact__mail--invers ">
+                                        info@devstudio.com</a>
+                                </li>
+                        
+                            </ul>
+                            <ul class="header-social">
+                                <li class="header-social__item">
+                                    <a class="header-social__link" href="">Instagram</a>
+                                </li>
+                                <li class="header-social__item">
+                                    <a class="header-social__link" href="">Twitter</a>
+                                </li>
+                                <li class="header-social__item">
+                                    <a class="header-social__link" href="">Facebook</a>
+                                </li>
+                                <li class="header-social__item">
+                                    <a class="header-social__link" href="">LinkedIn</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                </div>    
+                </div>
             </div>
         </header>
                 
@@ -540,10 +544,7 @@
         
         </div>
         <script src="./js/modal.js"></script>
-        <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-            integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-            crossorigin="anonymous"></script>
-        <script defer src="js/mobile-menu.js"></script>
+        <script src="./js/menu.js"></script>
         
     </body>
     
