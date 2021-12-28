@@ -58,17 +58,23 @@
 }
 
 .page-header__text {
-  position: relative;
-  display: flex;
-  align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .page-header__text {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 
 .page-header__text--invers:hover,
@@ -89,6 +95,28 @@
 .page-header__icon--smartphone:hover,
 .page-header__icon--smartphone:focus {
   fill: var(--accent-color);
+}
+
+.menu {
+  position: fixed;
+  background-color: #ffffff;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 5;
+}
+
+.menu__button-burger {
+  display: block;
+  margin-right: 10px;
+  margin-top: 10px;
+  border: none;
+  background-color: transparent;
+}
+
+.menu__button-burger:focus {
+  fill: var(--accent-color);
+  outline: none;
 }
 
 @media (max-width: 1199px) {
@@ -967,6 +995,12 @@
   transition: transform 250ms;
 }
 
+@media screen and (max-width: 479px) {
+  .modal {
+    width: 100%;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .modal {
     width: 528px;
@@ -1011,6 +1045,13 @@
   text-align: center;
   margin-bottom: 15px;
   color: var(--primary-text-color);
+}
+
+@media screen and (max-width: 479px) {
+  .modal-title {
+    font-size: 15px;
+    line-height: 2;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -1144,6 +1185,13 @@
   align-items: center;
 }
 
+@media screen and (max-width: 479px) {
+  .check-text {
+    font-size: 9px;
+    line-height: 1.01;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .check-text {
     font-size: 14px;
@@ -1180,6 +1228,13 @@
   text-decoration-line: underline;
   color: #2196f3;
   outline: none;
+}
+
+@media screen and (max-width: 479px) {
+  .check-link {
+    font-size: 9px;
+    line-height: 1.01;
+  }
 }
 
 @media screen and (min-width: 1200px) {

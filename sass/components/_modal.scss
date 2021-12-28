@@ -15,6 +15,9 @@
 }
 
 .modal {
+  @media screen and (max-width: 479px) {
+    width: 100%;
+  }
   width: 450px;
 
   @media screen and (min-width: 1200px) {
@@ -68,6 +71,10 @@
 }
 
 .modal-title {
+  @media screen and (max-width: 479px) {
+    font-size: 15px;
+    line-height: 2;
+  }
   font-weight: 700;
   font-size: 20px;
   line-height: 1.5;
@@ -194,6 +201,10 @@
 }
 
 .check-text {
+  @media screen and (max-width: 479px) {
+    font-size: 9px;
+    line-height: 1.01;
+  }
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
@@ -234,6 +245,10 @@
 }
 
 .check-link {
+  @media screen and (max-width: 479px) {
+    font-size: 9px;
+    line-height: 1.01;
+  }
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
