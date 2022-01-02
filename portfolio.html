@@ -16,37 +16,94 @@
 </head>
 
 <body>
-    <!-- <header class="page-header">
+    <header class="page-header">
         <div class="container page-header__main">
-            <nav class="page-header__nav">
+            <div class="page-header__container">
                 <a href="/" class="logo"><span class="page-header__logo">Web</span>Studio</a>
-                <ul class="page-header__item">
-                    <li class="page-header__element"><a href="./"
-                            class="page-header__text page-header__text--invers">Студия</a></li>
-                    <li class="page-header__element"><a href="./portfolio.html"
-                            class="page-header__text page-header__text--invers page-header__text--current">Портфолио</a></li>
-                    <li class="page-header__element"><a href="" class="page-header__text page-header__text--invers">Контакты</a>
-                    </li>
-                </ul>
+                <div>
+                    <button type="button" class="menu__button-burger">
+                        <svg class="" width="40" height="40">
+                            <use class="icon-menu" href="./images/icons.svg#icon-menu"></use>
+                        </svg>
+                        </button>
+                </div>
+            </div>
+                 
+            <nav class="page-header__nav">
+                    <ul class="page-header__item">
+                        <li class="page-header__element"><a href="./" class="page-header__text page-header__text--invers">Студия</a></li>
+                        <li class="page-header__element"><a href="./portfolio.html"
+                                                    class="page-header__text page-header__text--invers page-header__text--current">Портфолио</a></li>
+                        <li class="page-header__element"><a href="" class="page-header__text page-header__text--invers">Контакты</a>
+                                            </li>
+                    </ul>
             </nav>
-            <ul class="page-header__link">
-                <li class="page-header__element"><a href="mailto:info@devstudio.com"
-                        class="page-header__text page-header__text--invers">
-                        <svg class="page-header__icon page-header__icon--envelope" width="16" height="12">
-                            <use href="./images/icons.svg#icon-envelope">
+            <ul class="page-header__contact">
+                <li class="page-header__title"><a href="mailto:info@devstudio.com"
+                                                class="page-contact__link page-contact__link--invers">
+                    <svg class="page-header__icon page-header__icon--envelope" width="16" height="12">
+                        <use href="./images/icons.svg#icon-envelope">
                             </use>
-                        </svg>info@devstudio.com</a>
+                       </svg>info@devstudio.com</a>
                 </li>
-                <li class="page-header__element"><a href="tel:++380961111111"
-                        class="page-header__text page-header__text--invers">
-                        <svg class="page-header__icon page-header__icon--smartphone" width="10" height="16">
-                            <use href="./images/icons.svg#icon-smartphone">
+                <li class="page-header__title"><a href="tel:+380961111111"
+                                                class="page-contact__link page-contact__link--invers page-contact__link--tel">
+                    <svg class="page-header__icon page-header__icon--smartphone" width="10" height="16">
+                        <use href="./images/icons.svg#icon-smartphone">
                             </use>
-                        </svg>+38 096 111 11 11</a>
+                    </svg>+38 096 111 11 11</a>
                 </li>
             </ul>
-        </div>
-    </header> -->
+                
+                <div class="menu is-hidden">
+                    
+                        <div class="menu-nav">
+                        <button type="button" class="menu__button-close">
+                            <svg width="40" height="40">
+                                <use class="menu__icon-close" href="./images/icons.svg#icon-close"></use>
+                            </svg>
+                        </button>
+                                
+                       
+                            <ul class="menu-nav__item">
+                                <li class="menu-nav__element"><a href="./index.html"
+                                        class="menu-nav__text menu-nav__text--invers menu-nav__text--current">Студия</a></li>
+                                <li class="menu-nav__element"><a href="./portfolio.html"
+                                        class="menu-nav__text menu-nav__text--invers">Портфолио</a></li>
+                                <li class="menu-nav__element"><a href="" class="menu-nav__text menu-nav__text--invers">Контакты</a></li>
+                            </ul>
+                        </div>
+                        <div class="connection">
+                            <ul class="menu-contact">
+                                <li class="menu-contact__item"><a href="tel:+380961111111"
+                                        class="menu-contact__tel menu-contact__tel--invers">
+                                        +38 096 111 11 11</a>
+                                </li>
+                                <li class="menu-contact__item"><a href="mailto:info@devstudio.com"
+                                        class="menu-contact__mail menu-contact__mail--invers ">
+                                        info@devstudio.com</a>
+                                </li>
+                        
+                            </ul>
+                            <ul class="header-social">
+                                <li class="header-social__item">
+                                    <a class="header-social__link" href="">Instagram</a>
+                                </li>
+                                <li class="header-social__item">
+                                    <a class="header-social__link" href="">Twitter</a>
+                                </li>
+                                <li class="header-social__item">
+                                    <a class="header-social__link" href="">Facebook</a>
+                                </li>
+                                <li class="header-social__item">
+                                    <a class="header-social__link" href="">LinkedIn</a>
+                                </li>
+                            </ul>
+                        </div>
+                    
+                </div>
+            </div>
+        </header>
     
     <main>
         <section class="section-filther">
@@ -367,6 +424,7 @@
             </div>
         </footer>
     </main>
+    <script src="./js/menu.js"></script>
 </body>
 
 </html>

@@ -63,10 +63,15 @@
   //margin-left: -30px;
 }
 .card-set__element:not(:last-child) {
-  margin-bottom: 30px;
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 30px;
+  }
 }
 
 .card-set__text {
+  @media screen and (min-width: $tablet) {
+    flex-grow: 1;
+  }
   border-right: 1px solid #ececec;
   border-bottom: 1px solid #ececec;
   border-left: 1px solid #ececec;
@@ -97,6 +102,11 @@
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
       1px 4px 6px rgba(0, 0, 0, 0.16);
     outline: none;
+  }
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
   }
 }
 
