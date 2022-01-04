@@ -78,6 +78,12 @@
   bottom: -1px;
 }
 
+.page-header__title:not(:last-child) {
+  @media screen and (min-width: 768px) {
+    margin-bottom: 10px;
+  }
+}
+
 .page-header__text {
   display: none;
   @media screen and (min-width: 768px) {
@@ -110,8 +116,6 @@
     align-items: center;
     color: var(--primary-text-color);
 
-    // display: block;
-
     text-decoration: none;
 
     font-weight: 500;
@@ -123,9 +127,9 @@
   }
 }
 .page-contact__link--tel {
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    margin-top: 10px;
-  }
+  // @media screen and (min-width: 768px) and (max-width: 1199px) {
+  //   margin-top: 10px;
+  // }
   @media screen and (min-width: 1200px) {
     margin-left: 50px;
   }
@@ -282,6 +286,7 @@
     line-height: 1.22;
     letter-spacing: 0.02em;
     color: var(--accent-color);
+    text-decoration: none;
     @media screen and (min-width: 350px) {
       font-size: 14px;
     }

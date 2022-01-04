@@ -1,4 +1,8 @@
 .section-filther {
+  @media screen and (min-width: 480px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -58,14 +62,9 @@
       transform: translate(0);
     }
   }
-
-  //margin-top: -34px;
-  //margin-left: -30px;
 }
 .card-set__element:not(:last-child) {
-  @media screen and (min-width: $desktop) {
-    margin-bottom: 30px;
-  }
+  margin-bottom: 30px;
 }
 
 .card-set__text {

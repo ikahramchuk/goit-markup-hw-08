@@ -1,12 +1,12 @@
 .page-footer {
   background-color: #2f303a;
+  padding: 60px 0;
 
   &__container {
-    padding: 60px 15px;
     text-align: center;
     @media screen and (min-width: $tablet) and (max-width: 1199px) {
       flex-wrap: wrap;
-      justify-content: space-evenly;
+      justify-content: space-around;
     }
     @media screen and (min-width: $tablet) {
       display: flex;
@@ -33,10 +33,9 @@
   }
   &__social {
     margin-bottom: 60px;
-    @media screen and (min-width: $tablet) {
-      margin-right: 70px;
-    }
+
     @media screen and (min-width: 1200px) {
+      margin-right: 70px;
       margin-bottom: 0;
     }
   }
@@ -88,8 +87,6 @@
     display: flex;
     align-items: baseline;
   }
-
-  // justify-content: space-between;
 }
 
 .box__icon {
@@ -146,7 +143,6 @@
 }
 
 .box-online__input {
-  // width: 100%;
   width: auto;
   height: auto;
   background-color: transparent;
@@ -160,11 +156,11 @@
     width: calc(100% - 15px);
   }
   @media screen and (min-width: $tablet) {
-    margin-right: 12px;
     width: 450px;
     height: 50px;
   }
   @media screen and (min-width: $desktop) {
+    margin-right: 12px;
     width: 358px;
   }
 
