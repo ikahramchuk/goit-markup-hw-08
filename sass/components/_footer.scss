@@ -152,7 +152,7 @@
   outline: none;
   color: #ffffff;
   padding: 15px 16px;
-  @media screen and (min-width: 468px) {
+  @media screen and (max-width: 767px) {
     width: calc(100% - 15px);
   }
   @media screen and (min-width: $tablet) {

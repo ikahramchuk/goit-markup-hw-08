@@ -1,5 +1,5 @@
 .section-filther {
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 1199px) {
     padding-top: 60px;
     padding-bottom: 60px;
   }
@@ -18,7 +18,10 @@
   @media screen and (min-width: 768px) {
     justify-content: center;
 
-    margin-bottom: 34px;
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
   }
 }
 
@@ -64,7 +67,9 @@
   }
 }
 .card-set__element:not(:last-child) {
-  margin-bottom: 30px;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 30px;
+  }
 }
 
 .card-set__text {

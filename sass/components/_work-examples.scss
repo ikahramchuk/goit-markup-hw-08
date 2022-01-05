@@ -2,9 +2,12 @@
   outline: 2px solid tomato;
 }
 .examples {
-  padding-top: 60px;
-  @media screen and (min-width: 480px) {
-    margin-bottom: 60px;
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
   }
 }
 .section-feature {
@@ -13,39 +16,45 @@
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
+    margin: -15px;
   }
 
-  @media screen and (min-width: 1200px) {
-    display: flex;
-    flex-wrap: wrap;
-  }
+  // @media screen and (min-width: 1200px) {
+  //   display: flex;
+  //   flex-wrap: wrap;
+  // }
 }
 .section-feature__item {
   width: 100%;
   &:not(:last-child) {
-    margin-bottom: 30px;
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+      margin-bottom: 30px;
+    }
   }
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     display: inline-block;
     width: 354px;
-    &:nth-child(even) {
-      margin-left: 30px;
-    }
-    &:nth-child(n + 3) {
-      margin-top: 30px;
-    }
+    // margin-bottom: 0;
+    // &:nth-child(even) {
+    //   margin-left: 30px;
+    // }
+    // &:nth-child(n + 3) {
+    //   margin-top: 30px;
+    // }
+    margin: 15px;
   }
 
   @media screen and (min-width: 1200px) {
     width: 270px;
-    margin-left: 30px;
+    // margin-left: 30px;
+    margin: 15px;
   }
-  &:nth-child(1) {
-    @media screen and (min-width: 1200px) {
-      margin-left: 0;
-    }
-  }
+  // &:nth-child(1) {
+  //   @media screen and (min-width: 1200px) {
+  //     margin-left: 0;
+  //   }
+  // }
 }
 
 .advantage {
