@@ -2,7 +2,7 @@
   outline: 2px solid tomato;
 }
 .examples {
-  @media screen and (min-width: 480px) and (max-width: 1199px) {
+  @media screen and (max-width: 1199px) {
     padding-top: 60px;
     padding-bottom: 60px;
   }
@@ -27,7 +27,7 @@
 .section-feature__item {
   width: 100%;
   &:not(:last-child) {
-    @media screen and (min-width: 480px) and (max-width: 767px) {
+    @media screen and (max-width: 767px) {
       margin-bottom: 30px;
     }
   }
